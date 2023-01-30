@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input checked attribute</h1>
+
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="vehicle1" value="Bike" onclick="checkChange(1)">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car" onclick="checkChange(2)">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" onclick="checkChange(3)">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+<form action="/action_page.php" method="get">
+    <input type="checkbox" name="vehicle1" value="Bike" onclick='itemCheck(1)'>
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" name="vehicle2" value="Car" onclick='itemCheck(2)'>
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" name="vehicle3" value="Boat" onclick='itemCheck(3)'>
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="checkbox" name="vehicle1" value="Bike" onclick='itemCheck(4)'>
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" name="vehicle2" value="Car" onclick='itemCheck(5)'>
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" name="vehicle3" value="Boat"onclick='itemCheck(6)'>
+    <label for="vehicle3"> I have a boat</label><br><br>
+  </form>
+  
+
+</body>
+<script>
+    const [check,setCheck] = useState({check1: false, check2: false, check3: false})
+    const [item,setItem] = useState({item1: false, item2: false, item3: false, item4: false, item5: false, item6: false})
+    var data = ["checkbox1" = {
+        item1: false,
+        item2: false,
+        item3: false,
+        item4: false,
+        item5: false,
+        item6: false
+    }, "checkbox2"={
+        item1: false,
+        item2: false,
+        item3: false,
+        item4: false,
+        item5: false,
+        item6: false
+    }, "checkbox3"={
+        item1: false,
+        item2: false,
+        item3: false,
+        item4: false,
+        item5: false,
+        item6: false
+    }]
+    
+    function checkChange(idx) {
+        if(idx==1){
+
+        }
+    }
+    function itemCheck(idx){
+        if(idx==1){
+            item1 = !items1
+        }
+    }
+
+    function SubmitData(){
+        if(check.check1){
+            data = [...,"checkbox1"=item]
+        }
+    }
+
+
+
+
+
+</script>
+</html>
